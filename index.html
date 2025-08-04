@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🗓️ Weekly Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧑‍💻 Weekly Planner</h1>
+      <button id="themeToggle">🌓</button>
+    </header>
+
+    <div class="day-controls">
+      <label for="daySelector">Select Day:</label>
+      <select id="daySelector">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+      <p class="date" id="date"></p>
+    </div>
+
+    <section id="planner" class="planner"></section>
+
+    <div class="actions">
+      <button id="clear">🗑️ Clear This Day</button>
+      <button id="weeklySummaryBtn">📋 Weekly Summary</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast">✅ Task saved!</div>
+
+  <!-- Summary Modal -->
+  <div id="weeklyModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>🗂 Weekly Summary</h2>
+      <div id="weeklyContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
